@@ -1,0 +1,31 @@
+{
+    "version": "0.19.22",
+    "description": "A Windows/macOS GUI based on Clash with Chinese Patch",
+    "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
+    "license": "Unknown",
+    "url": [
+        "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z",
+        "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.22/app.7z"
+    ],
+    "hash": [
+        "7c09e759d3b450f51d5273b68231b90cc3b095f509d364189b4026c51019b6fd",
+        "dff689168f5361c3e76329b15f8ab9b16b95fdb9a02b149ce1a7eadf6c1947aa"
+    ],
+    "bin": [["Clash For Windows.exe", "cfw"]],
+    "shortcuts": [["Clash For Windows.exe", "Clash For Windows"]],
+    "pre_install": [
+        "New-Item -Path .\\data -ItemType Directory -Force | Out-Null",
+        "Move-Item $dir\\resources\\app.asar $dir\\resources\\app.asar.bak | Out-Null",
+        "Move-Item $dir\\app.asar $dir\\resources\\app.asar | Out-Null"
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/BoyceLig/Clash_Chinese_Patch"
+    },
+    "autoupdate": {
+        "url": [
+            "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/$version/Clash.for.Windows-$version-win.7z",
+            "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/$version/app.7z"
+        ]
+    }
+}
