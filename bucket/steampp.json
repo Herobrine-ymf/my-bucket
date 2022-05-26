@@ -1,0 +1,14 @@
+{
+    "version": "2.7.2",
+    "description": "一个开源跨平台的多功能游戏工具箱，此工具的大部分功能都是需要您下载安装 Steam 才能使用。",
+    "homepage": "https://github.com/BeyondDimension/SteamTools",
+    "license": "GPL-3.0",
+    "url": "https://github.com/BeyondDimension/SteamTools/releases/download/2.7.2/Steam++_win_x64_fde_v2.7.2.7z",
+    "hash": "b0ba27a8b0c627b3f009d13bd09ed25d415ab07dfb51f18accdd969136b8676e",
+    "shortcuts": [["Steam++.exe", "Watt Toolkit"]],
+    "persist": "AppData",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/BeyondDimension/SteamTools/releases/download/$version/Steam++_win_x64_fde_v$version.7z"
+    }
+}
