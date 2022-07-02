@@ -1,18 +1,28 @@
 {
-    "version": "0.19.22",
+    "version": "0.19.23",
     "description": "A Windows/macOS GUI based on Clash with Chinese Patch",
     "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
     "license": "Unknown",
     "url": [
-        "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.22/Clash.for.Windows-0.19.22-win.7z",
-        "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.22/app.7z"
+        "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.19.23/Clash.for.Windows-0.19.23-win.7z",
+        "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.23/app.7z"
     ],
     "hash": [
-        "7c09e759d3b450f51d5273b68231b90cc3b095f509d364189b4026c51019b6fd",
-        "dff689168f5361c3e76329b15f8ab9b16b95fdb9a02b149ce1a7eadf6c1947aa"
+        "0b6a3e04b6e41e75f0cfde999f7e09d29c76b353812b8d8e4d2d0d1ac01a0af2",
+        "047f6e98f49979e6b16bada93c77e18a90a4da4bef933c9be13b4cfc083244c4"
     ],
-    "bin": [["Clash For Windows.exe", "cfw"]],
-    "shortcuts": [["Clash For Windows.exe", "Clash For Windows"]],
+    "bin": [
+        [
+            "Clash For Windows.exe",
+            "cfw"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Clash For Windows.exe",
+            "Clash For Windows"
+        ]
+    ],
     "pre_install": [
         "New-Item -Path .\\data -ItemType Directory -Force | Out-Null",
         "Move-Item $dir\\resources\\app.asar $dir\\resources\\app.asar.bak | Out-Null",
