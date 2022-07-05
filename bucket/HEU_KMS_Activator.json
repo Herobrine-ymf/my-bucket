@@ -1,11 +1,16 @@
 {
-    "version": "24.6.4",
+    "version": "24.6.5",
     "description": "Windows Office 激活工具",
     "homepage": "https://github.com/zbezj/HEU_KMS_Activator",
     "license": "Unknown",
-    "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/24.6.4/HEU_KMS_Activator_v24.6.4.HEU168.zip#dl",
-    "hash": "64b3793ee55b98a46371078d000601120ceaf912df6007c479a6f05c55f2c0c5",
-    "shortcuts": [["HEU_KMS_Activator.exe", "HEU KMS Activator"]],
+    "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/24.6.5/HEU_KMS_Activator_v24.6.5.HEU168.zip#dl",
+    "hash": "cf24225e5e3c33b16ee5fafec58162eda2287725eb088d15ec5fbf86c48f63dd",
+    "shortcuts": [
+        [
+            "HEU_KMS_Activator.exe",
+            "HEU KMS Activator"
+        ]
+    ],
     "pre_install": [
         "$zip=(Get-ChildItem $dir\\HEU_KMS_Activator*).Name",
         "7z x $dir\\$zip -pHEU168 $('-o' + $dir) | Out-Null",
@@ -15,7 +20,11 @@
         "if (!(Test-Path \"$persist_dir\\Key-ID.txt\")) { New-Item \"$dir\\Key-ID.txt\" | Out-Null }"
     ],
     "post_install": "Remove-Item $dir\\*dl -Force",
-    "persist": ["Office16-19Backup", "WindowsBackup", "Key-ID.txt"],
+    "persist": [
+        "Office16-19Backup",
+        "WindowsBackup",
+        "Key-ID.txt"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/$version/HEU_KMS_Activator_v$version.HEU168.zip#dl"
