@@ -1,10 +1,10 @@
 {
-    "version": "2.8.1",
+    "version": "2.8.4",
     "description": "一个开源跨平台的多功能游戏工具箱，此工具的大部分功能都是需要您下载安装 Steam 才能使用。",
     "homepage": "https://github.com/BeyondDimension/SteamTools",
     "license": "GPL-3.0",
-    "url": "https://github.com/BeyondDimension/SteamTools/releases/download/2.8.1/Steam++_win_x64_fde_v2.8.1.7z",
-    "hash": "bb164743905a345fb5bedf254fe5fe0a44a0309c3b0d51a348358a6143464920",
+    "url": "https://github.com/BeyondDimension/SteamTools/releases/download/2.8.4/Steam++_win_x64_fde_v2.8.4.7z",
+    "hash": "a57ff8c2a4e19d9c324988e5d361e230ff63902fe71589370b6df1bac330d3e0",
     "shortcuts": [
         [
             "Steam++.exe",
