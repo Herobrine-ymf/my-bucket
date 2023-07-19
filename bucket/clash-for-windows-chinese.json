@@ -1,15 +1,15 @@
 {
-    "version": "0.20.28",
+    "version": "0.20.29",
     "description": "A Windows/macOS GUI based on Clash with Chinese Patch",
     "homepage": "https://github.com/Fndroid/clash_for_windows_pkg",
     "license": "Unknown",
     "url": [
-        "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.28/Clash.for.Windows-0.20.28-win.7z",
-        "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.20.28/app.7z"
+        "https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.29/Clash.for.Windows-0.20.29-win.7z",
+        "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.20.29/app.7z"
     ],
     "hash": [
-        "78fda4e6e24c9d931ebca29cf3591c59c27306d05f5855158eba2a57525928e0",
-        "8a9c623a79ad6ceaf1606d197500a8d77ff52ef7ae0eada47baaaee8eb603dc0"
+        "561fb1ca9450526230abcd2a9b1ac7a4b4d6e39f8d3640c85498bcc5589a90f0",
+        "430d0d3572a19ecd9dcf1484bcae69b524f2c64c0fbcb0096a5d27f7e7194779"
     ],
     "bin": [
         [
