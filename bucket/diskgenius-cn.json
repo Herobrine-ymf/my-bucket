@@ -1,10 +1,10 @@
 {
-    "version": "5.5.0.1488",
+    "version": "5.5.1.1508",
     "description": "Utility for data recovery, disk partition management, backup & restore",
     "homepage": "https://www.diskgenius.cn",
     "license": "Unknown",
-    "url": "https://download.geniusite.com/DG5501488_x64.zip",
-    "hash": "8b85b49ef6765b20d812b09ac91bb8f81645ce744e25583fd32fac647db36b3b",
+    "url": "https://download.geniusite.com/DG5511508_x64.zip",
+    "hash": "8c306aa776d8d13dcb264bcc304c5956bd199851387b282414b769b90bd456f1",
     "extract_dir": "DiskGenius",
     "pre_install": "if (!(Test-Path \"$persist_dir\\Options.ini\")) { New-Item \"$dir\\Options.ini\" | Out-Null }",
     "bin": "DiskGenius.exe",
