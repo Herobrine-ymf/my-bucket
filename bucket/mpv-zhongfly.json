@@ -1,0 +1,44 @@
+{
+    "version": "20260217-aa82213",
+    "description": "Video player based on MPlayer/mplayer2 (builds by zhongfly)",
+    "homepage": "https://mpv.io",
+    "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "notes": [
+        "To set and unset file type associations and AutoPlay handlers, run '$dir\\mpv-register.bat' and '$dir\\mpv-unregister.bat', respectively.",
+        "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types."
+    ],
+    "suggest": {
+        "yt-dlp": "yt-dlp"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-02-17-aa82213/mpv-x86_64-v3-20260217-git-aa82213.7z",
+            "hash": "cb62ef657b2449d95dffc3a420d3a27d7e0c82658a23a79c733bf17dbea4c6cf"
+        }
+    },
+    "pre_install": "Remove-Item -Path \"$dir\\updater.bat\", \"$dir\\installer\" -Recurse",
+    "env_add_path": ".",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "mpv"
+        ]
+    ],
+    "persist": "portable_config",
+    "checkver": {
+        "url": "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})-(?<commit>[\\da-f]+)",
+        "replace": "${year}${month}${day}-${commit}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$matchYear-$matchMonth-$matchDay-$matchCommit/mpv-x86_64-v3-$matchYear$matchMonth$matchDay-git-$matchCommit.7z",
+                "hash": {
+                    "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$matchYear-$matchMonth-$matchDay-$matchCommit/sha256.txt"
+                }
+            }
+        }
+    }
+}
