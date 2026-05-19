@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.0.6/aria2-next-2.0.6-windows-x86_64.exe#aria2c.exe",
+            "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v2.0.6/aria2-next-2.0.6-windows-x86_64.exe#/aria2c.exe",
             "hash": "0d75f91c79ff56e70166556a42671d1de9b0b5c991b0751596638e1079390a28"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-x86_64.exe#aria2c.exe"
+                "url": "https://github.com/AnInsomniacy/aria2-next/releases/download/v$version/aria2-next-$version-windows-x86_64.exe#/aria2c.exe"
             }
         }
     }
